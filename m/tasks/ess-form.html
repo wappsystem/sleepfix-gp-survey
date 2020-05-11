@@ -1,0 +1,448 @@
+<div id=D__ID>
+
+<!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                <h3 id=title__ID></h3>
+                <!-- participant name and study id -->
+                  <div id="participant_div__ID">
+                      <div class="form-group">
+                         <fieldset class="subquestions">
+                             <label ><span class="">Participant</span>
+                                 <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant"/>
+                             </label><br>
+                             <label ><span class="">Participant ID</span>
+                                 <input type=text name="Participant_uid" class=form-control readonly />
+                             </label>
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <fieldset class="subquestions">
+                          <h4>How likely are you to doze or fall asleep in the following situations, in contrast to just feeling tired? This refers to your usual way of life in recent times. Even if you have not done some of these things recently, try to work out how they would have affected you.</h4>
+                      </fieldset>
+                  </div>
+                  <div class="form-group sticky-top shadow-sm bg-light">
+                      <div id=legend__ID class="questiongroup " >
+                          <fieldset class="">
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">0</span>= Would NEVER doze
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">1</span>= SLIGHT chance of dozing
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">2</span>= MODERATE chance of dozing
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">3</span>= HIGH chance of dozing
+                              </label><br>
+                           </fieldset>
+                       </div>
+                       <button type="button" id="btn_legend__ID" class="btn btn-primary mb-1 mt-0 mx-0 p-1">Hide legend</button>
+                  </div>
+                  <div class="form-group">
+                      <h4>1. Sitting and reading</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Would NEVER doze">
+                                <input type="radio" name="ESS_1" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="SLIGHT chance of dozing">
+                                <input type="radio" name="ESS_1" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="MODERATE chance of dozing">
+                                <input type="radio" name="ESS_1" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="HIGH chance of dozing">
+                                <input type="radio" name="ESS_1" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=ess_sel_1>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                     <h4>2. Watching TV</h4>
+                     <div class="questiongroup">
+                         <fieldset>
+                             <label class="radiobuttons" title="Would NEVER doze">
+                               <input type="radio" name="ESS_2" value="0" required>
+                               <span class="checkmark no-dot">0</span></label>
+                             <label class="radiobuttons" title="SLIGHT chance of dozing">
+                               <input type="radio" name="ESS_2" value="1">
+                               <span class="checkmark no-dot">1</span></label>
+                             <label class="radiobuttons" title="MODERATE chance of dozing">
+                               <input type="radio" name="ESS_2" value="2">
+                               <span class="checkmark no-dot">2</span></label>
+                             <label class="radiobuttons" title="HIGH chance of dozing">
+                               <input type="radio" name="ESS_2" value="3">
+                               <span class="checkmark no-dot">3</span></label>
+                         </fieldset>
+                         <label id=ess_sel_2>&nbsp;</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                     <h4>3. Sitting, inactive in a public place (eg a theatre or a meeting)</h4>
+                     <div class="questiongroup">
+                        <fieldset>
+                            <label class="radiobuttons" title="Would NEVER doze">
+                              <input type="radio" name="ESS_3" value="0" required>
+                              <span class="checkmark no-dot">0</span></label>
+                            <label class="radiobuttons" title="SLIGHT chance of dozing">
+                              <input type="radio" name="ESS_3" value="1">
+                              <span class="checkmark no-dot">1</span></label>
+                            <label class="radiobuttons" title="MODERATE chance of dozing">
+                              <input type="radio" name="ESS_3" value="2">
+                              <span class="checkmark no-dot">2</span></label>
+                            <label class="radiobuttons" title="HIGH chance of dozing">
+                              <input type="radio" name="ESS_3" value="3">
+                              <span class="checkmark no-dot">3</span></label>
+                        </fieldset>
+                        <label id=ess_sel_3>&nbsp;</label>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                       <h4>4. As a passenger in a car for an hour without a break</h4>
+                     <div class="questiongroup">
+                           <fieldset>
+                               <label class="radiobuttons" title="Would NEVER doze">
+                                 <input type="radio" name="ESS_4" value="0" required>
+                                 <span class="checkmark no-dot">0</span></label>
+                               <label class="radiobuttons" title="SLIGHT chance of dozing">
+                                 <input type="radio" name="ESS_4" value="1">
+                                 <span class="checkmark no-dot">1</span></label>
+                               <label class="radiobuttons" title="MODERATE chance of dozing">
+                                 <input type="radio" name="ESS_4" value="2">
+                                 <span class="checkmark no-dot">2</span></label>
+                               <label class="radiobuttons" title="HIGH chance of dozing">
+                                 <input type="radio" name="ESS_4" value="3">
+                                 <span class="checkmark no-dot">3</span></label>
+                           </fieldset>
+                           <label id=ess_sel_4>&nbsp;</label>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <h4>5. Lying down to rest in the afternoon when circumstances permit</h4>
+                    <div class="questiongroup">
+                          <fieldset>
+                              <label class="radiobuttons" title="Would NEVER doze">
+                                <input type="radio" name="ESS_5" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="SLIGHT chance of dozing">
+                                <input type="radio" name="ESS_5" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="MODERATE chance of dozing">
+                                <input type="radio" name="ESS_5" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="HIGH chance of dozing">
+                                <input type="radio" name="ESS_5" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=ess_sel_5>&nbsp;</label>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <h4>6. Sitting and talking to someone</h4>
+                   <div class="questiongroup">
+                         <fieldset>
+                             <label class="radiobuttons" title="Would NEVER doze">
+                               <input type="radio" name="ESS_6" value="0" required>
+                               <span class="checkmark no-dot">0</span></label>
+                             <label class="radiobuttons" title="SLIGHT chance of dozing">
+                               <input type="radio" name="ESS_6" value="1">
+                               <span class="checkmark no-dot">1</span></label>
+                             <label class="radiobuttons" title="MODERATE chance of dozing">
+                               <input type="radio" name="ESS_6" value="2">
+                               <span class="checkmark no-dot">2</span></label>
+                             <label class="radiobuttons" title="HIGH chance of dozing">
+                               <input type="radio" name="ESS_6" value="3">
+                               <span class="checkmark no-dot">3</span></label>
+                         </fieldset>
+                         <label id=ess_sel_6>&nbsp;</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <h4>7. Sitting quietly after lunch without alcohol</h4>
+                      <div class="questiongroup">
+                            <fieldset>
+                                <label class="radiobuttons" title="Would NEVER doze">
+                                  <input type="radio" name="ESS_7" value="0" required>
+                                  <span class="checkmark no-dot">0</span></label>
+                                <label class="radiobuttons" title="SLIGHT chance of dozing">
+                                  <input type="radio" name="ESS_7" value="1">
+                                  <span class="checkmark no-dot">1</span></label>
+                                <label class="radiobuttons" title="MODERATE chance of dozing">
+                                  <input type="radio" name="ESS_7" value="2">
+                                  <span class="checkmark no-dot">2</span></label>
+                                <label class="radiobuttons" title="HIGH chance of dozing">
+                                  <input type="radio" name="ESS_7" value="3">
+                                  <span class="checkmark no-dot">3</span></label>
+                            </fieldset>
+                            <label id=ess_sel_7>&nbsp;</label>
+                       </div>
+                   </div>
+                  <div class="form-group">
+                        <h4>8. In a car, while stopped for a few minutes in traffic</h4>
+                      <div class="questiongroup">
+                            <fieldset>
+                                <label class="radiobuttons" title="Would NEVER doze">
+                                  <input type="radio" name="ESS_8" value="0" required>
+                                  <span class="checkmark no-dot">0</span></label>
+                                <label class="radiobuttons" title="SLIGHT chance of dozing">
+                                  <input type="radio" name="ESS_8" value="1">
+                                  <span class="checkmark no-dot">1</span></label>
+                                <label class="radiobuttons" title="MODERATE chance of dozing">
+                                  <input type="radio" name="ESS_8" value="2">
+                                  <span class="checkmark no-dot">2</span></label>
+                                <label class="radiobuttons" title="HIGH chance of dozing">
+                                  <input type="radio" name="ESS_8" value="3">
+                                  <span class="checkmark no-dot">3</span></label>
+                            </fieldset>
+                            <label id=ess_sel_8>&nbsp;</label>
+                       </div>
+                  </div>
+                  <div style="text-align:right">
+                    <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Next</button>
+                    <p id=page_no__ID style="margin-right:30px"></p>
+                  </div>
+                </form>
+            </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  <script>
+      function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+          $('#btn_legend__ID').on('click',function(){
+              if($('#btn_legend__ID').text()=='Hide legend'){
+                $('#btn_legend__ID').text('Show legend');
+                $('#legend__ID').hide();
+            }
+            else {
+                $('#btn_legend__ID').text('Hide legend');
+                $('#legend__ID').show();
+            }
+          });
+          $("#D__ID input[name=ESS_1]").on('click',function(){
+              set_selected_text(1)
+          })
+          $("#D__ID input[name=ESS_2]").on('click',function(){
+              set_selected_text(2)
+          })
+          $("#D__ID input[name=ESS_3]").on('click',function(){
+              set_selected_text(3)
+          })
+          $("#D__ID input[name=ESS_4]").on('click',function(){
+              set_selected_text(4)
+          })
+          $("#D__ID input[name=ESS_5]").on('click',function(){
+              set_selected_text(5)
+          })
+          $("#D__ID input[name=ESS_6]").on('click',function(){
+              set_selected_text(6)
+          })
+          $("#D__ID input[name=ESS_7]").on('click',function(){
+              set_selected_text(7)
+          })
+          $("#D__ID input[name=ESS_8]").on('click',function(){
+              set_selected_text(8)
+          })
+          //-------------------------------------
+          var set_selected_text=function(i){
+             $("#ess_sel_"+i+"").css('padding-top','10px').css('color','#EA7859');
+             switch ($("#D__ID input[name=ESS_"+i+"]:checked").val()) {
+                 case '0':
+                     $("#ess_sel_"+i+"").text("Would NEVER doze");
+                 break;
+                 case '1':
+                     $("#ess_sel_"+i+"").text("SLIGHT chance of dozing");
+                 break;
+                 case '2':
+                     $("#ess_sel_"+i+"").text("MODERATE chance of dozing");
+                 break;
+                 case '3':
+                     $("#ess_sel_"+i+"").text("HIGH chance of dozing");
+                 break;
+                 default:
+                    $("#ess_sel_"+i+"").html("&nbsp;");
+                break;
+             }
+          }
+          //-------------------------------------
+            //-------------------------------------
+            var max_I1 = 0;
+            var AccessCode='';
+            var AccessCodeI1;
+            //-------------------------------------
+            //m.default_load = m.load;
+            m.load=function(){
+                //m.default_load();
+                if($vm.online_questionnaire==1 || $vm.online_questionnaire_w6==1) {
+                    $('#pdf__ID').hide();
+                    $('#participant_div__ID').hide();
+                }
+                $('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
+                $('#page_no__ID').text($vm.module_list[$vm.vm['__ID'].name].page);
+                //console.log(JSON.stringify(m.input))
+                //--------------------------
+                for(var i=0;i<8;i++){
+                  set_selected_text(i+1)
+                }
+                $('#D__ID').css('overflow','visible');              
+              //--------------------------
+                if(m.input!=undefined && m.input.p_uid!=undefined){
+                    //new from child panel
+                    console.log("load")
+                    $("#F__ID input[name=Participant]").val(m.input.p_uid);
+                    $("#F__ID input[name=Participant_uid]").val(m.input.p_uid);
+                }
+                else if(m.input!=undefined && m.input.record!=undefined){
+                    //modify
+                }
+                else{
+                    //new with no parent
+                }
+                var tb=$vm.module_list['participant-data'].Table;
+                $vm.request({ cmd: "find-p1", table:tb,  query:{} }, function (res) {
+                    if(res.result.length>0) {
+                        AccessCode=res.result[0].Data.Access_Code;
+                        AccessCodeI1=res.result[0].UID;
+                        console.log(AccessCode+' - '+AccessCodeI1)
+                    }
+                    else {$vm.alert("Problem with Access codes");console.log($vm.user_name);}
+                })
+                m.input.goback = 1;
+            }
+          //-------------------------------------
+            var before_submit = m.before_submit;
+            m.before_submit = function (data, index) {
+              data.ESS=(parseInt(data.ESS_1)+parseInt(data.ESS_2)+parseInt(data.ESS_3)+parseInt(data.ESS_4)+parseInt(data.ESS_5)+parseInt(data.ESS_6)+parseInt(data.ESS_7)+parseInt(data.ESS_8)).toString();
+              return before_submit(data, index);
+            }
+            //-------------------------------------
+            m.after_insert = function (data, res) {
+                var q_url = "";
+                qry = { I2: m.input.p_uid };
+                var tb = $vm.module_list['contact-form'].Table;
+                jQuery.ajaxSetup({ async: false });
+                $vm.request({ cmd: "find-s", table: tb, query: qry, options: {} }, function (res) {
+                    if (res.result.length != 0) {
+                        var param = [];
+                        if(res.result[0].I1== '' || res.result[0].I1== undefined){
+                            res.result[0].Data.access_code=AccessCode;
+                            res.result[0].Data.sequence_no=AccessCodeI1;
+                            res.result[0].I1=AccessCodeI1;
+                        }
+                        param.push(res.result[0].Data.email);
+                        param.push(res.result[0].Data.first_name);
+                        param.push(q_url);
+                        param.push(res.result[0].Data.access_code);
+                        param.push(res.result[0].Data.phone)
+                        param.push(res.result[0].Data.sms)
+                        var recid = res.result[0]._id;
+                        if ($vm.oq == 'bl') {
+                            res.result[0].Data.Email_Access_Code = get_now_date();
+                            $vm.request({ cmd: "update", id: recid, table: tb, data: res.result[0].Data,index:{I1:res.result[0].I1}}, function (res) {
+                            });
+                            //$vm.alert('Send Email Disabled Email:'+param[0]+' First Name:'+param[1]+' Access Code:'+param[3]+' Phone:'+param[4]+' SMS:'+param[5]); 
+                            send_email(param);                           
+                            $vm.load_module_v2(m.prefix + "success-page", '', { p_uid: m.input.p_uid, first_name: res.result[0].Data.first_name, access_code: res.result[0].Data.access_code })
+                        }
+                        else {
+                          $vm.load_module_v2(m.prefix + 'w6-quesstionnaire', '', {p_uid:m.input.p_uid});
+/*
+                          res.result[0].Data.Q="2"
+                            $vm.request({ cmd: "update", id: recid, table: tb, data: res.result[0].Data}, function (res) {
+                            });
+                            $vm.load_module_v2(m.prefix + "thank-you-page", '', { p_uid: m.input.p_uid })
+*/  
+                          }
+                    }
+                    else $vm.alert("Sorry, something went wrong!")
+                })
+                jQuery.ajaxSetup({ async: true });
+            }
+            //-------------------------------------
+            var send_email = function (param) {
+                var url = "https://prod-31.australiasoutheast.logic.azure.com:443/workflows/eed1e940d1e84fc6a0c85b23aeeba2b1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5qT-10hModS8fCHpn3k1iZ-ojRi75rI1xI1fj7i0TpQ";
+                var sms_url = "https://prod-14.australiasoutheast.logic.azure.com:443/workflows/d97fd9ca20144b8d8a8faee0ca2d1693/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=_WljPgPFdsbYx1nr3SM9ifRcKZ0VHleW-b-Gj-EI-dA";
+                var data = {
+                    "emailaddress": "" + param[0] + "",
+                    "first_name": "" + param[1] + "",
+                    "link": "" + param[2] + "",
+                    "code": "" + param[3] + ""
+                }
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                    }
+                    else if (this.readyState == 4 && this.status == 403) {
+                    }
+                    if (this.status == 404) {
+                        $vm.alert(url + ", 404 (Not found)");
+                    }
+                }
+                xmlHttp.open("POST", url, true); // true for asynchronous
+                xmlHttp.setRequestHeader("Content-Type", "application/json");
+                xmlHttp.send(JSON.stringify(data));
+                //------------------------------------
+                //SMS alert
+                //------------------------------------
+                if(param[5]=='on'){
+                    var sms_data = {
+                        "emailaddress": "" + param[4].replace(/-/g,'') + "@e2s.directsms.com.au",
+                        "first_name": "" + param[1] + "",
+                        "link": "" + param[2] + "",
+                        "code": "" + param[3] + ""
+                    }
+                    var sms_xmlHttp = new XMLHttpRequest();
+                    sms_xmlHttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                        }
+                        else if (this.readyState == 4 && this.status == 403) {
+                        }
+                        if (this.status == 404) {
+                            $vm.alert(url + ", 404 (Not found)");
+                        }
+                    }
+                    sms_xmlHttp.open("POST", sms_url, true); // true for asynchronous
+                    sms_xmlHttp.setRequestHeader("Content-Type", "application/json");
+                    sms_xmlHttp.send(JSON.stringify(sms_data));                                        
+                }
+            }
+            //------------------------------------
+            var get_now_date = function () {
+                var today = new Date();
+                var dd = today.getDate();
+                var mm = today.getMonth() + 1; //January is 0!
+                var yyyy = today.getFullYear();
+                var hh = today.getHours()
+                var mn = today.getMinutes()
+                var ss = today.getSeconds()
+                if (dd < 10) { dd = '0' + dd; }
+                if (mm < 10) { mm = '0' + mm; }
+                if (mn < 10) { mn = '0' + mn; }
+                if (hh < 10) { hh = '0' + hh; }
+                if (ss < 10) { ss = '0' + ss; }
+                return dd + '/' + mm + '/' + yyyy;
+            }
+            //-------------------------------------
+        }
+  </script>
+   <style>
+    #D__ID .mt-95 {
+    max-width:600px;
+}
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+</style>
+</div>
