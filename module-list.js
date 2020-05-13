@@ -1,8 +1,8 @@
 (function(){
     //-------------------------------------------------------------------------------------
     var modules={
-        "survey-data":  	    {url:"$H/m/tasks/survey-data.html",Table:"sleepfix-gp-survey",form_module:"survey-form"},
-        "survey-form":  	    {url:"$H/m/tasks/survey-form.html",Table:"sleepfix-gp-survey"},
+        "survey-data":  	    {url:"$H/m/survey-data.html",Table:"sleepfix-gp-survey",form_module:"survey-form"},
+        "survey-form":  	    {url:"$H/m/survey-form.html",Table:"sleepfix-gp-survey"},
    }
     //-------------------------------------------------------------------------------------
     for(p in modules){
