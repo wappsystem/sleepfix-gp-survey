@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="col">
                             <div style="display:xnone" class=C__ID__s>
-                                &nbsp;&nbsp;<input id=survey__ID type=button value='To Survey' class="btn-primary" />
+                                &nbsp;&nbsp;<input id=survey__ID type=button value='Next' class="btn-primary" />
                             </div>
                         </div>
                     </div>
@@ -31,6 +31,8 @@
             //-------------------------------------
             $('#survey__ID').on('click', function () {
                 //------------------------------------
+                //$vm.load_module_v2(m.prefix + 'pis-form', '', {});
+                //$vm.load_module_v2(m.prefix + 'consent-form', '', {});
                 $vm.load_module_v2(m.prefix + 'survey-form', '', {});
             });
         }
@@ -51,7 +53,7 @@
         }
     </style>
     <style third-party>
-        .home {
+        #D__ID .home {
             /*background-color: #004955 !important;*/
             /*background-image: url(images/form-bg.jpg) !important;*/
             background-size: cover;
@@ -65,19 +67,19 @@
             /*100px-80px*/
         }
 
-        .home img {
+        #D__ID .home img {
             width: auto;
             height: auto;
         }
 
         @media (max-width: 1200px) {
-            .home img {
+            #D__ID .home img {
                 width: 360px;
                 height: auto;
                 margin-left: 0px !important;
             }
 
-            .home h1 {
+            #D__ID .home h1 {
                 font-family: 'Roboto Slab';
                 font-weight: 100;
                 font-size: 32px;
@@ -88,29 +90,29 @@
             }
         }
 
-        .home h1 {
+        #D__ID .home h1 {
             font-family: 'Roboto Slab';
             font-weight: 100;
-            font-size: 32px;
+            font-size: 40px;
             color: #FCFBF5;
             letter-spacing: 0;
             /*line-height: 72px;*/
             margin-top: 30px;
         }
 
-        .home p {
+        #D__ID .home p {
             font-family: 'Nunito Sans';
             font-weight: 100;
-            font-size: 13px;
+            font-size: 18px;
             color: #FFFFFF;
             letter-spacing: 0;
         }
 
         /* HOME BUTTONS */
-        .home .btn-primary,
-        .home .btn-primary:active,
-        .home .btn-primary:visited,
-        .home .btn-primary:focus {
+        #D__ID .home .btn-primary,
+        #D__ID .home .btn-primary:active,
+        #D__ID  .home .btn-primary:visited,
+        #D__ID .home .btn-primary:focus {
             background-color: #45496A;
             border-color: #45496A;
             font-family: 'Nunito Sans';
@@ -126,7 +128,7 @@
             margin: 0 10px 10px 0;
         }
 
-        .home .btn-primary:hover {
+        #D__ID .home .btn-primary:hover {
             background-color: #35395D;
             border-color: #35395D;
             font-family: 'Nunito Sans';
@@ -142,10 +144,10 @@
             margin: 0 10px 10px 0;
         }
 
-        .home .greenbutton,
-        .home .greenbutton:active,
-        .home .greenbutton:visited,
-        .home .greenbutton:focus {
+        #D__ID .home .greenbutton,
+        #D__ID .home .greenbutton:active,
+        #D__ID .home .greenbutton:visited,
+        #D__ID .home .greenbutton:focus {
             background-color: #23807F;
             border-color: #23807F;
             font-family: 'Nunito Sans';
@@ -161,7 +163,7 @@
             margin: 0 10px 10px 0;
         }
 
-        .home .greenbutton:hover {
+        #D__ID .home .greenbutton:hover {
             background-color: #1F6363;
             border-color: #1F6363;
             font-family: 'Nunito Sans';
@@ -179,10 +181,10 @@
 
         @media (max-width: 600px) {
 
-            .home .btn-primary,
-            .home .btn-primary:active,
-            .home .btn-primary:visited,
-            .home .btn-primary:focus {
+            #D__ID .home .btn-primary,
+            #D__ID .home .btn-primary:active,
+            #D__ID .home .btn-primary:visited,
+            #D__ID .home .btn-primary:focus {
                 background-color: #45496A;
                 border-color: #45496A;
                 font-family: 'Nunito Sans';
@@ -198,7 +200,7 @@
                 margin: 0 10px 10px 0;
             }
 
-            .home .btn-primary:hover {
+            #D__ID .home .btn-primary:hover {
                 background-color: #35395D;
                 border-color: #35395D;
                 font-family: 'Nunito Sans';
@@ -214,10 +216,10 @@
                 margin: 0 10px 10px 0;
             }
 
-            .home .greenbutton,
-            .home .greenbutton:active,
-            .home .greenbutton:visited,
-            .home .greenbutton:focus {
+            #D__ID .home .greenbutton,
+            #D__ID .home .greenbutton:active,
+            #D__ID .home .greenbutton:visited,
+            #D__ID .home .greenbutton:focus {
                 background-color: #23807F;
                 border-color: #23807F;
                 font-family: 'Nunito Sans';
@@ -233,7 +235,7 @@
                 margin: 0 10px 10px 0;
             }
 
-            .home .greenbutton:hover {
+            #D__ID .home .greenbutton:hover {
                 background-color: #1F6363;
                 border-color: #1F6363;
                 font-family: 'Nunito Sans';
@@ -256,7 +258,7 @@
                 height: 100%;
             }
 
-            .C__ID__s {
+            #D__ID .C__ID__s {
                 width: 100%;
                 height: 100%;
                 padding: 60px 0 0 0;
@@ -264,7 +266,7 @@
             }
         }
 
-        .C__ID__input {
+        #D__ID .C__ID__input {
             height: 34px;
             width: 100px;
             color: #555;
@@ -278,7 +280,7 @@
             margin-bottom: 0;
         }
 
-        .C__ID__button {
+        #D__ID .C__ID__button {
             margin: 16px 0;
             -webkit-appearance: button;
             cursor: pointer;
@@ -298,21 +300,21 @@
             border-radius: 4px;
         }
 
-        .C__ID__button:hover {
+        #D__ID .C__ID__button:hover {
             background-color: #3276b1;
             border-color: #285e8e;
         }
 
-        .C__ID__s * {
+        #D__ID .C__ID__s * {
             margin: 6px 0;
         }
 
-        .C__ID__s span {
+        #D__ID .C__ID__s span {
             color: #FF0000;
             font: 12pt "Arial";
         }
 
-        .C__ID__s u {
+        #D__ID .C__ID__s u {
             cursor: pointer;
             font: 12pt "Arial";
         }
