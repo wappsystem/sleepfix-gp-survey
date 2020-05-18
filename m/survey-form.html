@@ -303,7 +303,7 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-lg-12 col-sm-12" id=pdfs__ID>
-                                    <a href="m/tasks/PIS Patients Version 1.2 December Clean.pdf" target="_blank">
+                                    <a href="images/Participant Information Sheet_Primary Care Professional_Clean V.2 April 2020.pdf" target="_blank">
                                         <div class="downloads">
                                             <div class="col-lg-12 col-sm-12 pl-0 pr-0"> <img src="images/pdf-icon.png"
                                                     width="48" height="auto" alt="download pdf" />
@@ -393,20 +393,30 @@
                                     <h4><b>I hereby agree to participate in the following aspects of this research
                                             study</b>
                                     </h4>
+                                </div>
+                                <div class="form-group">
+                                    <h4>Part A</h4>
                                     <div class="questiongroup">
-                                        <fieldset class="">
+                                        <fieldset>
                                             <label class="radiobuttons">
-                                                <input type="radio" name="Consent" value="Part A" required>
-                                                <span class="checkmark"></span> Part A
-                                            </label><br>
+                                                <input type="radio" name="Consent_A" value="Yes" required>
+                                                <span class="checkmark"></span> Yes</label><br>
                                             <label class="radiobuttons">
-                                                <input type="radio" name="Consent" value="Part A + Part B" required>
-                                                <span class="checkmark"></span> Part A + Part B
-                                            </label><br>
+                                                <input type="radio" name="Consent_A" value="No">
+                                                <span class="checkmark"></span> No</label><br>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <h4>Part A + B</h4>
+                                    <div class="questiongroup">
+                                        <fieldset>
                                             <label class="radiobuttons">
-                                                <input type="radio" name="Consent" value="No">
-                                                <span class="checkmark"></span> No
-                                            </label><br>
+                                                <input type="radio" name="Consent_A_B" value="Yes" required>
+                                                <span class="checkmark"></span> Yes</label><br>
+                                            <label class="radiobuttons">
+                                                <input type="radio" name="Consent_A_B" value="No">
+                                                <span class="checkmark"></span> No</label><br>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -1287,12 +1297,12 @@
                                     <div class="questiongroup">
                                         <fieldset>
                                             <label class="checkboxes">
-                                                <input type="checkbox" name="gift_card">
+                                                <input type="checkbox" name="gift_card" >
                                                 <span class="check_checkmark"></span> - Take part in a draw to receive a
                                                 Visa gift card valued at $200
                                             </label><br>
                                             <label class="checkboxes">
-                                                <input type="checkbox" name="interview">
+                                                <input type="checkbox" name="interview" >
                                                 <span class="check_checkmark"></span> - Be contacted about a
                                                 semi-structured
                                                 interview to further discuss my perceptions and experiences with digital
@@ -1313,7 +1323,7 @@
                                         </fieldset>
                                         <fieldset>
                                             <label style='width: 100%;'>Email Address
-                                                <input type=email class='form-control' name=email
+                                                <input type=email class='form-control' name=email id=email__ID
                                                     placeholder="Email"><br>
                                             </label>
                                         </fieldset>
@@ -1330,6 +1340,16 @@
                                     </label>
                                 </div>
                             </div>
+                            <div id=S4__ID style='display:none'>
+                                <h3>Thank You</h3>
+                                <!-- form group -->
+                                <div class="form-group">
+                                    <fieldset class="text-center">
+                                        <h4><b>Thank you for completing the survey.</b><br><br> If you have any questions or concerns please contact us on (02) 9114 0481 or woolcock.sleepfix@sydney.edu.au
+                                        </h4>
+                                    </fieldset>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -1340,8 +1360,17 @@
     function F__ID() {
         VmInclude: __CURRENT_PATH__/form.01.js
         //-------------------------------------
-        $("#D__ID input[name=Consent]").on('click', function () {
-            if ($(this).attr('value') == 'Part A' || $(this).attr('value') == 'Part A + Part B') { 
+        $("#D__ID input[name=Consent_A]").on('click', function () {
+            if ($("#D__ID input[name=Consent_A]:checked").val() == 'Yes' || $("#D__ID input[name=Consent_A_B]:checked").val()=='Yes') { 
+                $('#Consent_button__ID').show(); $('#consent_no_text__ID').hide(); 
+            }
+            else { 
+                $('#Consent_button__ID').hide(); $('#consent_no_text__ID').show(); 
+            }
+        })
+        //---------------------------------------
+        $("#D__ID input[name=Consent_A_B]").on('click', function () {
+            if ($("#D__ID input[name=Consent_A]:checked").val() == 'Yes' || $("#D__ID input[name=Consent_A_B]:checked").val()=='Yes') { 
                 $('#Consent_button__ID').show(); $('#consent_no_text__ID').hide(); 
             }
             else { 
@@ -1355,6 +1384,30 @@
             }
             else { 
                 $('#PIS_button__ID').hide(); $('#pis_no_text__ID').show(); 
+            }
+        })
+        //---------------------------------------
+        $("#D__ID input[name=interview]").on('click', function () {
+            //console.log($("#D__ID input[name=interview]:checked").val()+"|"+$("#D__ID input[name=gift_card]:checked").val())
+            if ($("#D__ID input[name=interview]:checked").val() == 'on' || $("#D__ID input[name=gift_card]:checked").val() == 'on' ) { 
+                $('#email__ID').prop('required',true); 
+                $('#mobileNumber__ID').prop('required',true); 
+            }
+            else { 
+                $('#email__ID').prop('required',false); 
+                $('#mobileNumber__ID').prop('required',false); 
+            }
+        })
+        //---------------------------------------
+        $("#D__ID input[name=gift_card]").on('click', function () {
+            //console.log($("#D__ID input[name=interview]:checked").val()+"|"+$("#D__ID input[name=gift_card]:checked").val())
+            if ($("#D__ID input[name=interview]:checked").val() == 'on' || $("#D__ID input[name=gift_card]:checked").val() == 'on' ) { 
+                $('#email__ID').prop('required',true); 
+                $('#mobileNumber__ID').prop('required',true); 
+            }
+            else { 
+                $('#email__ID').prop('required',false); 
+                $('#mobileNumber__ID').prop('required',false); 
             }
         })
         //-------------------------------------

@@ -108,6 +108,9 @@ m.submit=function(event){
     $("#S1__ID * ").attr('disabled', 'disabled');
     $("#S2__ID").hide();
     $("#S2__ID * ").attr('disabled', 'disabled');
+    $("#S3__ID").hide();
+    $("#S3__ID * ").attr('disabled', 'disabled');
+    $("#S4__ID").show();
 
     if(m.input!=undefined && m.input.record!=undefined){
         for(k in m.input.record.Data){
